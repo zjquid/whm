@@ -1,6 +1,6 @@
 function whm()
 n = 30; % number of breaths
-t = 1.5; % length of breath
+t = 1.5; % length of breath (default = 1.5)
 
 hold(n,t);
 thold = 60; % length of breath hold
@@ -34,6 +34,7 @@ function retention(thold)
 disp("breathe in fully");
 pause(2);
 disp("let it out and hold breath");
+pause(2);
 
     for i = 1:thold
         disp(i);
